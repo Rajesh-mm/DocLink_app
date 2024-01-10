@@ -29,7 +29,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:background="@drawable/button_style2"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="5dp"
         android:layout_width="315dp"
         android:layout_height="60dp"
@@ -64,13 +64,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/have_an_account" />
 
-            <TextView
+            <Button
+                android:padding="0dp"
+                android:id="@+id/btn_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login"
                 android:textStyle="bold"
                 android:textColor="@color/color1"
-                android:layout_marginStart="2sp" />
+                android:background="@color/material_on_background_disabled"
+                />
         </LinearLayout>
     </RelativeLayout>
 

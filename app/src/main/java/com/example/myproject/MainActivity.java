@@ -36,17 +36,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set up click listener for the Get Started button
+
         getStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start the Login activity when the button is clicked
                 startLoginActivity();
             }
         });
     }
 
-    // Method to start the Login activity
     public void startLoginActivity() {
         Intent intent = new Intent(MainActivity.this, Login.class);
         startActivity(intent);

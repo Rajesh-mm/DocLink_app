@@ -44,4 +44,9 @@
     <string name="doclink">DocLink</string>
     <string name="hello_world">Hello, World!</string>
     <string name="doctor">Doctor</string>
+    <string name="enter_your_email_id">Enter Your Email ID</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="a_za_z0_9_a_z_a_z">[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+</string>
 </resources>

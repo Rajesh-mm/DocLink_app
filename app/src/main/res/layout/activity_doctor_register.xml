@@ -33,7 +33,7 @@
 
         <!-- Doctor Name Section -->
         <TextView
-            android:text="@string/doctor_s_name"
+            android:text="@string/enter_your_name"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -52,7 +52,9 @@
                 android:id="@+id/doctor_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
+                android:background="@android:color/transparent"
+                android:layout_marginStart="5dp"
+                android:hint="@string/doctor_s_name" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Age Section -->
@@ -73,58 +75,33 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp">
 
-            <!-- Day -->
-            <com.google.android.material.textfield.TextInputLayout
+            <Spinner
+                android:id="@+id/day"
                 android:layout_width="0dp"
                 android:layout_height="54dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
-                android:background="@drawable/textfield2">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/day"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
-                    android:hint="@string/day"
-                    android:inputType="number"
-                    android:background="@android:color/transparent" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:background="@drawable/textfield2"
+                android:layout_marginStart="8dp"/>
 
             <!-- Month -->
-            <com.google.android.material.textfield.TextInputLayout
+            <Spinner
+                android:id="@+id/month"
                 android:layout_width="0dp"
                 android:layout_height="54dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
-                android:background="@drawable/textfield2">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/month"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
-                    android:hint="@string/month"
-                    android:inputType="number"
-                    android:background="@android:color/transparent" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:background="@drawable/textfield2"
+                android:layout_marginStart="8dp"/>
 
             <!-- Year -->
-            <com.google.android.material.textfield.TextInputLayout
+            <Spinner
+                android:id="@+id/year"
                 android:layout_width="0dp"
                 android:layout_height="54dp"
                 android:layout_weight="1"
-                android:background="@drawable/textfield2">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/year"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
-                    android:hint="@string/year"
-                    android:inputType="number"
-                    android:background="@android:color/transparent" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:background="@drawable/textfield2"
+                android:layout_marginStart="8dp"/>
 
         </LinearLayout>
 
@@ -153,21 +130,28 @@
                 android:id="@+id/radioButtonMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/male" />
+                android:text="@string/male"
+                android:padding="16dp"
+                />
 
             <!-- Female RadioButton -->
             <RadioButton
                 android:id="@+id/radioButtonFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/female" />
+                android:text="@string/female"
+                android:padding="16dp"
+
+                />
 
             <!-- Others RadioButton -->
             <RadioButton
                 android:id="@+id/radioButtonOthers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/others" />
+                android:text="@string/others"
+                android:padding="16dp"
+                />
 
         </RadioGroup>
 
@@ -176,7 +160,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="@string/mobile_number"
+            android:text="@string/enter_your_mobile_number"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -192,14 +176,16 @@
                 android:id="@+id/mobile_no"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="number"
-                android:background="@android:color/transparent" />
+                android:background="@android:color/transparent"
+                android:hint="@string/mobile_number"
+                android:layout_marginStart="5dp"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <!-- Email Section -->
         <TextView
-            android:text="@string/email"
+            android:text="@string/enter_your_email_id"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -218,7 +204,9 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
+                android:background="@android:color/transparent"
+                android:layout_marginStart="5dp"
+                android:hint="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Password Section -->
@@ -226,7 +214,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="@string/new_password"
+            android:text="@string/enter_new_password"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -242,7 +230,9 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
+                android:background="@android:color/transparent"
+                android:layout_marginStart="5dp"
+                android:hint="@string/password" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
